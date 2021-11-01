@@ -10,6 +10,16 @@ button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -71,6 +81,7 @@ button {
 /* Main  */
 .content {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   padding: 56px 8px 0;
@@ -139,4 +150,15 @@ button {
 
 .footer__links a:not(:first-child) {
   margin-left: 27px;
+}
+
+/* Media Querry  */
+
+@media (min-width: 763px) {
+  .content {
+    padding-top: 120px;
+  }
+  .content__logo {
+    height: 150px;
+  }
 }
