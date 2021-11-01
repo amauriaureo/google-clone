@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Clone</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="menu">
-      <div class="menu__section left"></div>
-      <img class="menu__icon" src="" alt="" />
-      <div class="menu__section right"></div>
+      <div class="menu__section left">
+        <img class="menu__icon" src="assets/burger-icon.svg" alt="Burguer" />
+        <a class="menu__link active">All</a>
+        <a class="menu__link">Images</a>
+      </div>
+      <div class="menu__section right">
+        <img src="assets/more-icon.svg" alt="More" class="menu__icon" />
+        <div class="menu__profile">
+          <img
+            src="./assets/circle-frame.svg"
+            alt="Avatar Frame"
+            class="menu__avatar--frame"
+          />
+          <img
+            class="menu__avatar"
+            src="https://avatars.dicebear.com/api/human/yard.svg?width=285&mood=happy"
+          />
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
